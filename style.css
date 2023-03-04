@@ -1,0 +1,82 @@
+:root {
+  --shadow-1: rgba(0, 0, 0, 0.1);
+  --shadow-2: rgba(0, 0, 0, 0.2);
+  --card-box-shadow: 0 12px 28px 0 var(--shadow-2), 0 2px 4px 0 var(--shadow-1);
+  --secondary-button-background: #e4e6eb;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  box-shadow: var(--card-box-shadow);
+  width: 100vw;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 56px;
+}
+header nav .searchbar {
+  background-color: var(--secondary-button-background);
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  width: 680px;
+}
+header nav .searchbar label {
+  height: 100%;
+  width: 40px;
+}
+header nav .searchbar input {
+  margin-left: 0.5rem;
+  border: none;
+  background-color: transparent;
+}
+header nav .searchbar input:focus {
+  outline: none;
+}
+header nav .account-controls-and-settings {
+  display: flex;
+}
+header nav .account-controls-and-settings .icon {
+  height: 40px;
+  width: 40px;
+  background-color: var(--secondary-button-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  overflow: hidden;
+}
+header nav .account-controls-and-settings .icon:not(:last-child) {
+  margin-right: 0.5rem;
+}
+header nav .account-controls-and-settings .icon .profile {
+  height: 40px;
+  width: 40px;
+}
+
+body {
+  background-color: var(--secondary-button-background);
+}
+body #main aside {
+  height: calc(100vh - 56px);
+}/*# sourceMappingURL=style.css.map */
